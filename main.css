@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Poppins';
+    color: #d3a6a6;
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+.container {
+    max-width: 80%;
+    width: 1280px;
+    margin: auto;
+}
+
+.tophead {
+    background-color: #dfbfbf;
+    padding: 20px 0;
+}
+
+
+.infos,
+.info-address,
+.social {
+    display: flex;
+}
+.infos {
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);           
+}
+
+.info-address {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.phone,
+.address,
+.schedule {
+    display: flex;
+    align-items: center;
+}
+
+.info-address i {
+    margin-right: 8px;
+}
+
+.social i {
+    margin-left: 18px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+}
+
+section.hero {
+    display: flex;
+	justify-content: center;
+    height: calc(100vh - 155px);
+    background-image: url('img/hero.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.content-hero {
+    flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 550px;
+}
+
+.content-hero span {
+    font-family: 'Roboto';
+    color: rgb(121, 121, 121);
+}
+
+.content-hero h1 {
+    font-size: 40px;
+    color: #d3a6a6
+}
+
+.content-hero p.description {
+    font-size: 24px;
+}
+
+a.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: #d3a6a6;
+    font-size: 20px;
+    color: #fff;
+    max-width: 30%;
+    padding: 10px;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+a.btn:hover {
+    cursor: pointer;
+}
+
+section.services {
+    background-color: #f6f6f6;
+    padding-bottom: 40px;
+}
+
+section.services h1,
+section.about h1 {
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+.card-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+.card:nth-last-child(3),
+.card:nth-last-child(2),
+.card:nth-last-child(1) {
+    margin-bottom: 50px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.card p.card-description {
+    font-size: 14px;
+    color: #333;
+}
+
+section.about {
+    padding-bottom: 40px;
+}
+
+section.about .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+section.about .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-content img {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+.about-me {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 50px 0 20px;
+    background-color: #d3a6a6;
+    font-family: 'Roboto';
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .footer-address {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+footer .footer-address .address {
+    margin: 20px 0;
+}
+
+footer .footer-address i {
+    margin-right: 10px;
+}
+
+p.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
