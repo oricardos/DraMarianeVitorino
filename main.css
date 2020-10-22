@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +27,62 @@ p {
     max-width: 80%;
     width: 1280px;
     margin: auto;
+}
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3a6a6cc;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    -webkit-overflow-scrolling: touch; 
+    position: fixed;
+}
+
+.modal_active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.modal img#modal_img {
+    height: 90vh;
+    transform: scale(0);
+    transition: all linear 0.2s;
+}
+
+.modal_active img#modal_img {
+    transform: scale(1);
+}
+
+.modal span#btn_close {
+    color: #fff;
+    background-color: #d3a6a6;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.modal span#btn_close:hover {
+    background-color: #fff;
+    color: #d3a6a6;
 }
 
 .tophead {
@@ -124,13 +184,15 @@ a.btn:hover {
     cursor: pointer;
 }
 
-section.services {
+section.services,
+section.about {
     background-color: #f6f6f6;
     padding-bottom: 40px;
 }
 
 section.services h1,
-section.about h1 {
+section.about h1,
+section.local h1 {
     padding: 40px 0;
     font-size: 36px;
 }
@@ -158,7 +220,32 @@ section.about h1 {
     color: #333;
 }
 
-section.about {
+section.local .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-wrap: wrap; */
+}
+
+section.local .card_img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px 0;
+}
+
+.small_img {
+    height: 100%;
+    cursor: pointer;
+    
+    transition: all linear .2s;
+}
+
+.small_img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+section.local {
     padding-bottom: 40px;
 }
 
