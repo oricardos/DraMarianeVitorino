@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a#wpp {
+    display: none;
+    position: fixed;
+    font-size: 40px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 .overflow {
     overflow: hidden;
 }
@@ -213,6 +227,11 @@ section.local h1 {
 .card h3 {
     margin: 10px 0;
     font-size: 23px;
+}
+
+.card img.card-img {
+    width: 70px;
+    height: 70px;
 }
 
 .card p.card-description {
