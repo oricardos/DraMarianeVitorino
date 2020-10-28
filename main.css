@@ -33,7 +33,7 @@ a {
     color: #d3a6a6;
 }
 
-p {
+p, ul li {
     font-family: 'Poppins';
 }
 
@@ -234,10 +234,19 @@ section.local h1 {
     height: 70px;
 }
 
-.card p.card-description {
+.card p.card-description,
+ul.card-list {
     font-size: 14px;
     color: #333;
+    line-height: 1.8em;
 }
+
+ul.card-list li {
+    font-weight: 700;
+    list-style: none;
+    margin: 8px 0;
+}
+
 
 section.local .row {
     display: grid;
